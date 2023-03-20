@@ -85,7 +85,7 @@
     nav {
         background: transparent;
         width: 100vw;
-        height: 5rem;
+        height: 4rem;
         position: fixed;
         top: 0;
         z-index: 11;
@@ -141,7 +141,7 @@
 /* ================================ Categories START ================================ */
     .categories {
         background: var(--color-bg1);
-        height: 40rem;
+        height: auto;
     }
     .categories h1 {
         line-height: 1;
@@ -433,7 +433,7 @@
             grid-template-columns: 1fr 1fr;
         }
     }
-/* ================================ Style Media Queries (Phone) ================================ */
+
     @media screen and (max-width: 600px) {
         .container {
             width: var(--container-width-sm);
@@ -487,4 +487,13 @@
         .footer_socials {
             justify-content: center;
         }
+    }  
+
+    @media screen and (max-width: 400px) {
+        .container {
+            height: auto;
+        }
+        /* .header_container {
+            overflow-x: auto;
+        }  */
     }
